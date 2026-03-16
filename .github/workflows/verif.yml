@@ -1,0 +1,20 @@
+name: Verification HTML
+
+on:
+ push:
+  branches: [ main ]
+
+jobs:
+ check-html:
+  runs-on: ubuntu-latest
+
+  steps:
+   - uses: actions/checkout@v4
+
+   - name: Vérifier index.html
+     run: |
+       if [ ! -f index.html ]; then
+         echo "Erreur : index.html absent"
+         exit 1
+       fi
+       echo "index.html présent"
