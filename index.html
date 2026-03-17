@@ -1,14 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>TP GitHub Actions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atys Keny – Bach 3.1</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      text-align: center;
+      padding: 60px 50px;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      background: #161b22;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #238636, #1f6feb);
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #e6edf3;
+    }
+
+    .promo {
+      display: inline-block;
+      background: #1f6feb;
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #30363d;
+      margin: 24px 0;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #8b949e;
+      line-height: 2;
+    }
+
+    .info span {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    .badge {
+      margin-top: 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #238636;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #3fb950;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
 </head>
-
 <body>
-
-<h1>TP GitHub Actions</h1>
-<p><p>Test du déploiement GitHub Actions</p></p>
-
+  <div class="card">
+    <div class="avatar">AK</div>
+    <h1>Atys Keny</h1>
+    <span class="promo">BACH 3.1</span>
+    <hr class="divider">
+    <div class="info">
+      <p>Projet : <span>TP GitHub Actions</span></p>
+      <p>Serveur : <span>Debian 13</span></p>
+      <p>Pipeline : <span>CI/CD Self-Hosted Runner</span></p>
+      <p>Déployé via : <span>GitHub Actions + Nginx</span></p>
+    </div>
+    <div class="badge">
+      <div class="dot"></div>
+      Déploiement réussi
+    </div>
+  </div>
 </body>
 </html>
